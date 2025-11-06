@@ -15,6 +15,9 @@ export default defineConfig({
     port: 3001,
     host: true,
   },
+  // build: {
+  //   modulePreload: true
+  // },
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
