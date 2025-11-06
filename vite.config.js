@@ -6,7 +6,7 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: './',
+  base: '/UrticariaActivitScore.github.io/',
   plugins: [
     vue(),
     vueDevTools(),
@@ -15,6 +15,9 @@ export default defineConfig({
     port: 3001,
     host: true,
   },
+  // build: {
+  //   modulePreload: true
+  // },
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
